@@ -7,4 +7,6 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
+               #主界面转到blog里面的url中的view
+    url(r'', include('blog.urls')),
 ]
